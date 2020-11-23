@@ -1,0 +1,349 @@
+@font-face {
+  font-family: Roboto;
+  src: url('fonts/roboto/Roboto-Regular.ttf');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url('fonts/roboto/Roboto-Bold.ttf');
+  font-weight: bold;
+}
+
+html, body {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: Roboto, sans-serif;
+	font-weight: normal;
+	color:  #666F77;
+}
+
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+a {
+	text-decoration: none;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+
+
+/* GLOBAL */
+.btn {
+	display: inline-block;
+	text-transform: uppercase;
+	font-size: 14px;
+	border-radius: 4px;
+	padding: 15px 25px;
+	margin: 0 5px;
+}
+
+.btn-primary {
+	background: #629DD1;
+	border: 1px solid #629DD1;
+	color:  white;
+}
+
+.btn-primary:hover {
+	background: #192024;
+	border-color: #192024;
+}
+
+.btn-secondary {
+	background: transparent;
+	border: 1px solid white;
+	color:  white;
+}
+
+.btn-secondary:hover {
+	background: #192024;
+	border-color: #192024;
+}
+
+.btn-outline {
+	background: transparent;
+	border: 1px solid #192024;
+	color:  #192024;
+}
+
+.btn-outline:hover {
+	background: #192024;
+	border-color: #192024;
+	color:  white;
+}
+
+.service,
+.blog,
+main {
+	padding: 100px 50px;
+}
+
+.service h2,
+.blog h2,
+.post h2,
+.sidebar h3 {
+	font-size: 22px;
+	text-transform: uppercase;
+	font-weight: normal;
+	letter-spacing: 5px;
+	margin: 0;
+	margin-bottom: 30px;
+}
+
+.service .subtitle,
+.blog .subtitle {
+	font-size: 18px;
+	color: #BBBBBB;
+}
+
+.service-content p,
+.news p,
+.post p,
+.sidebar p {
+	font-size: 14px;
+	line-height: 24px;
+	margin: 0;
+
+}
+
+
+
+/* HEADER */
+header {
+	height: 48px;
+	display: flex;
+	justify-content: space-between;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+h1 {
+	text-transform: uppercase;
+	margin: 0;
+	font-size: 16px;
+	line-height: 48px;
+}
+
+nav ul {
+	list-style: none;
+	padding-left: 0;
+	margin: 0;
+	display: flex;
+	align-items: center;
+}
+
+nav a {
+	font-size: 14px;
+	padding: 0 16px;
+	line-height: 44px;
+	color: #666F77;
+}
+
+nav .btn {
+	padding: 8px 16px;
+	line-height: 1;
+}
+
+
+
+/* HERO */
+.hero {
+	background: url('images/banner.jpg') center top no-repeat;
+	background-size: cover;
+	text-align: center;
+	color:  white;
+	height: 450px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.hero h2 {
+	font-size: 40px;
+	text-transform: uppercase;
+	font-weight: normal;
+	letter-spacing: 15px;
+	margin: 0;
+	margin-bottom: 40px;
+}
+
+.hero p {
+	font-size: 18px;
+	margin: 0;
+	margin-bottom: 50px;
+}
+
+.hero .btn {
+	min-width: 230px;
+}
+
+
+
+/* SERVICE */
+.service {
+	text-align: center;
+}
+
+.service-content {
+	display: flex;
+}
+
+.service-content aside {
+	flex: 1;
+	border:  1px solid #E3E3E3;
+	border-radius: 6px;
+	padding: 40px 20px 50px;
+	margin: 30px;
+	color: #BBBBBB;
+}
+
+.service-content .icon {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 140px;
+	width: 140px;
+	border-radius: 140px;
+	margin: 0 auto;
+	border: 1px solid #E3E3E3;
+}
+
+.service-content .fa {
+	height: 120px;
+	width: 120px;
+	border-radius: 120px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 40px;
+	color: white;
+	background: #629DD1;
+}
+
+.service-content h3 {
+	font-size: 16px;
+	font-weight: normal;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	margin: 30px 0;
+}
+
+
+
+/* BLOG */
+.blog {
+	background-color: #192024;
+	color:  #666F77;
+	text-align: center;
+}
+
+.blog h2 {
+	color: white;
+}
+
+.news {
+	display: flex;
+}
+
+.news article {
+	flex: 1;
+}
+
+.news article:first-child { margin: 30px 30px 30px 15px; }
+.news article:last-child { margin: 30px 15px 30px 30px; }
+
+.news img {
+	border-radius: 10px;
+}
+
+.news h3 {
+	margin: 30px 0;
+	font-weight: normal;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+
+.news .btn {
+	margin-top: 30px;
+}
+
+
+
+/* MAIN */
+main {
+	display: flex;
+}
+
+.post,
+.sidebar {
+	margin: 0 30px;
+}
+
+.post img {
+	border-radius: 10px;
+	margin-bottom: 30px;
+}
+
+.sidebar h3 {
+	margin-bottom: 20px;
+}
+
+.sidebar .btn {
+	margin: 40px 0 0;
+}
+
+
+
+/* FOOTER */
+footer {
+	background: #F8F8F8;
+	padding: 100px 0;
+	text-align: center;
+	color:  #C4C4C4;
+	display: flex;
+	justify-content: center;
+}
+
+footer p {
+	padding: 10px 20px;
+}
+
+footer p:first-child {
+	border-right: 1px solid #C4C4C4;
+}
+
+
+
+/* MOBIL */
+@media (max-width: 600px) {
+	.hero .btn-primary {
+		margin-bottom: 20px
+	}
+
+	.service,
+	.blog,
+	main {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+	.service-content,
+	.news,
+	main {
+		flex-direction: column;
+	}
+
+	.news article {
+		margin: 30px !important;
+	}
+
+	.sidebar {
+		margin-top: 50px
+	}
+}
